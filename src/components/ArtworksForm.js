@@ -9,6 +9,15 @@ class ArtworksForm extends Component {
         price: ''
     }
 
+    // handle onchange in each input, so client can type 
+    handleChange = event => {
+        const { name, value } = event.target
+
+        this.setState({
+            [name]: value
+        }) 
+    }
+
     render() {
         return (
             <form>
