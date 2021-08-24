@@ -1,4 +1,4 @@
-export const usersReducer = ( state = [], action ) => {
+export const cartsReducer = ( state = [], action ) => {
     switch(action.type){
         case 'FETCH_CARTS': 
             return action.payload

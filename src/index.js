@@ -7,6 +7,7 @@ import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension';
 //window.__Redux_devtools
+import { rootReducer } from './reducers/rootReducer'
 
 import App from './components/App'
 
