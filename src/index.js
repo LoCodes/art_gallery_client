@@ -8,6 +8,8 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension';
 //window.__Redux_devtools
 
+import App from './components/App'
+
 // create a store for redux => createStore 1. reducer, 2. devTools 
 
 const store = createStore(
@@ -16,3 +18,10 @@ const store = createStore(
     )
 
 
+ReactDom.render(
+    <Provider store={store}>
+        <App />        
+    </Provider>,
+
+    document.getElementById('root') 
+)
