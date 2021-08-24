@@ -8,5 +8,4 @@ export const rootReducer = combineReducers({ // create keys with the values in t
     artworks: artworksReducer,
     carts: cartsReducer
 
-
 })
