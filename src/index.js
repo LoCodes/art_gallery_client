@@ -12,8 +12,8 @@ import App from './components/App'
 
 // create a store for redux => createStore 1. reducer, 2. devTools 
 
-const store = createStore(
-    rootReducer, 
+const store = createStore( // cant pass in multiple reducers here 
+    rootReducer,    // were going to combine all reducers into rootReducers 
     composeWithDevTools(applyMiddleware(thunk))
     )
 
