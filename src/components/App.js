@@ -1,9 +1,11 @@
 import React from 'react'
+import ArtworksContainer from './ArtworksContainer'
 
 const App = () => {
     return (
         <div>
-            Hello World
+            Hello World - APP 
+            <ArtworksContainer />
         </div>
     )
 }
