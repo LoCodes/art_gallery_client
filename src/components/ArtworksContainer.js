@@ -2,8 +2,16 @@
 // form will be here 
 
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+
+import { fetchArtworks } from '../actions/ArtworksActions'
 
 class ArtworksContainer extends Component {
+
+    componentDidMount(){
+        this.props.fetchArtworks()
+    }
+
     render() {
         return (
             <div>
@@ -13,4 +21,4 @@ class ArtworksContainer extends Component {
     }
 }
 
-export default ArtworksContainer
+export default connect(null, {fetchArtworks} )( ArtworksContainer )
