@@ -8,3 +8,13 @@ export const fetchArtworks = () => {
         .then(artworks => dispatch({type: "FETCH_ARTWORKS", payload: artworks}))
     }
 }
+
+export const addArtwork = artwork => {
+    fetch('http://127.0.0.1:3000/artworks', {
+        method: 'POST', 
+        body: JSON.stringify(grad),
+        headers: { 'Content-Type': 'application/json'}        
+    } )
+    .then(resp => resp.json())
+    .then(artwork => dispatch({type: "ADD_ARTWORK", payload: artwork}))
+}

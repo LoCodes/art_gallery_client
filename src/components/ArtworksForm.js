@@ -18,9 +18,13 @@ class ArtworksForm extends Component {
         }) 
     }
 
+    // dispatch and post to api 
+
+    // handleSubmit
+
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <label>Title:</label>
                 <input type="text" value={this.state.title} onChange={this.handleChange} name="title" />
                 < br /> 
