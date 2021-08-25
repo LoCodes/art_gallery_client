@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
-import { Switch, Router } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import ArtworksContainer from './ArtworksContainer'
 import About from './About'
+import Home from './Home'
 
 const Router = () => {
     
     return (
-        <div>
-                
-        </div>
+        <Switch>
+            <Route exact path="/" component={Home} />
+            <ArtworksContainer path="/artworks" component={ArtworksContainer} />
+            <About path="/about" component={ About } />
+        </Switch>
     )
 }
 
