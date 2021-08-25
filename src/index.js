@@ -9,6 +9,8 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 //window.__Redux_devtools
 import { rootReducer } from './reducers/rootReducer'
 
+import { BrowserRouter as  Router } from 'react-router-dom'
+
 import App from './components/App'
 
 // create a store for redux => createStore 1. reducer, 2. devTools 
@@ -21,7 +23,10 @@ const store = createStore( // cant pass in multiple reducers here
 
 ReactDom.render(
     <Provider store={store}>
-        <App />        
+        <Router >
+            <App />        
+
+        </Router>
     </Provider>,
 
     document.getElementById('root') 
