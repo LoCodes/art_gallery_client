@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { addArtwork }from '../actions/ArtworksActions.js'
+import { connect } from 'react-redux'
+
 
 class ArtworksForm extends Component {
 
@@ -20,7 +23,10 @@ class ArtworksForm extends Component {
 
     // dispatch and post to api 
 
-    // handleSubmit
+    handleSubmit = e => {
+        e.preventDefault()
+        this.props.addArtwork(this.state)
+    }
 
     render() {
         return (
@@ -43,4 +49,4 @@ class ArtworksForm extends Component {
     }
 }
 
-export default ArtworksForm
+export default connect(null, { addArtwork })(ArtworksForm)

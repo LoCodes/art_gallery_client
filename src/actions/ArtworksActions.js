@@ -9,12 +9,15 @@ export const fetchArtworks = () => {
     }
 }
 
-export const addArtwork = artwork => {
-    fetch('http://127.0.0.1:3000/artworks', {
-        method: 'POST', 
-        body: JSON.stringify(grad),
-        headers: { 'Content-Type': 'application/json'}        
-    } )
-    .then(resp => resp.json())
-    .then(artwork => dispatch({type: "ADD_ARTWORK", payload: artwork}))
+export const addArtwork = (artwork) => {
+    return dispatch => {
+        fetch('http://127.0.0.1:3000/artworks', {
+            method: 'POST',
+            body: JSON.stringify(artwork),
+            headers: { 'Content-Type': 'application/json'}
+        })
+        .then(resp => resp.json())
+        .then(artwork => dispatch({ type: 'ADD_ARTWORK', payload: artwork}))
+    }
 }
+
