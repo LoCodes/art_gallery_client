@@ -7,7 +7,7 @@ const App = () => {
     return (
         <div>
             Hello World - APP 
-            {/* <ArtworksContainer /> */}
+            <ArtworksContainer />
             <Router />
         </div>
     )

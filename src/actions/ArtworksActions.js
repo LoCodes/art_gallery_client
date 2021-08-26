@@ -9,6 +9,7 @@ export const fetchArtworks = () => {
     }
 }
 
+// POST
 export const addArtwork = (artwork) => {
     return dispatch => {
         fetch('http://127.0.0.1:3000/artworks', {
