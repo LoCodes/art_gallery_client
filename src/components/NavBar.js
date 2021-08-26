@@ -9,16 +9,16 @@ const NavBar = () => {
             <li>Home</li>  
             </NavLink>
         
-            <NavLink to="/artworks"exact >
+            {/* <NavLink to="/artworks"exact >
             <li>ARTS? </li>
-            </NavLink>
+            </NavLink> */}
 
             <NavLink to="/about" exact >
             <li>About</li>
             </NavLink>
 
             <NavLink to="/artworkslist"exact>
-            <li>List</li>
+            <li>Art Gallery</li>
             </NavLink>
 
             <NavLink to="/artworksform" exact >

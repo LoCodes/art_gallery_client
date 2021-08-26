@@ -19,7 +19,7 @@ class ArtworksContainer extends Component {
             <div>
                 ArtworksContainer!
                 <ArtworksForm />
-                <ArtworksList /> 
+                {/* <ArtworksList />  */}
             </div>
         )
     }

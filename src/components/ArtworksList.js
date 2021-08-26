@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 const ArtworksList = ( { artworks }) => {
     return (
         <div>
-            Art List 
+            <h1> Art Gallery </h1>
 
             {artworks.map(artwork => <ul>
             <li key={artwork.id } > 
