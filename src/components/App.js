@@ -1,8 +1,8 @@
 import React from 'react'
-import ArtworksContainer from './ArtworksContainer'
+// import ArtworksContainer from './ArtworksContainer'
 import Router from './Router'
 import NavBar from './NavBar'
-import { Switch, Route } from 'react-router-dom'
+import { Switch } from 'react-router-dom'
 
 
 const App = () => {

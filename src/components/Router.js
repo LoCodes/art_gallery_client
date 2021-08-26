@@ -4,7 +4,7 @@ import ArtworksContainer from './ArtworksContainer' // form
 import About from './About'
 import Home from './Home'
 import ArtworksList from './ArtworksList'
-import ArtworksForm from './ArtworksForm'
+// import ArtworksForm from './ArtworksForm'
 
 const Router = () => {
     
