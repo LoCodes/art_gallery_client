@@ -9,9 +9,10 @@ import ArtworksForm from './ArtworksForm'
 const Router = () => {
     
     return (
-        <Switch>
+        
+        <Switch>           
             <Route exact path="/" component={Home} />
-            <ArtworksContainer path="/artworks" component={ArtworksContainer} />
+            <ArtworksContainer exact path="/artworks" component={ArtworksContainer} />
             <About path="/about" component={ About } />
             <ArtworksList path="/artworkslist" component={ ArtworksList } />
             <ArtworksForm path="/artworksform" component={ ArtworksForm } />

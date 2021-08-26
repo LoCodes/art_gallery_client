@@ -30,7 +30,9 @@ class ArtworksForm extends Component {
 
     render() {
         return (
+            
             <form onSubmit={this.handleSubmit}>
+                <h1> Add Artwork </h1>
                 <label>Title:</label>
                 <input type="text" value={this.state.title} onChange={this.handleChange} name="title" />
                 < br /> 
