@@ -6,8 +6,9 @@ const ArtworksList = ( { artworks }) => {
         <div>
             <h1> Art Gallery </h1>
 
-            {artworks.map(artwork => <ul>
-            <li key={artwork.id } > 
+            {artworks.map(artwork => 
+            <ul  key={artwork.id }>
+            <li> 
                 title: { artwork.title } 
                 < br />
                 img: <img src={artwork.img} alt="sometext"  width="300" height="300"/>
@@ -15,7 +16,8 @@ const ArtworksList = ( { artworks }) => {
                 description: {artwork.description}
                 < br />
                 price: {artwork.price }
-            </li></ul>)}
+            </li>
+            </ul>)}
             
         </div>
     )
