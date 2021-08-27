@@ -7,9 +7,9 @@ import { Switch } from 'react-router-dom'
 
 const App = () => {
 
-    state = {
-        cart: []
-    }
+    // state = {
+    //     cart: []
+    // }
 
     return (
         <div>
