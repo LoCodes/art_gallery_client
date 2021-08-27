@@ -6,6 +6,11 @@ import { Switch } from 'react-router-dom'
 
 
 const App = () => {
+
+    state = {
+        cart: []
+    }
+
     return (
         <div>
             <NavBar/>
@@ -19,5 +24,12 @@ const App = () => {
         </div>
     )
 }
+
+
+// const MSTP = (state) => {
+//   return { cart: state.artworks}
+// }
+
+// export default connect(MSTP)(App)
 
 export default App
