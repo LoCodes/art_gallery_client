@@ -1,7 +1,12 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { addToCart } from '../actions/CartsActions'
 
 const ArtworksList = ( { artworks }) => {
+    // handleAdd = () => {
+    //     debugger
+    // }
+    // const art = this.props.artwork
     return (
         <div>
             <h1> Art Gallery </h1>
@@ -16,12 +21,15 @@ const ArtworksList = ( { artworks }) => {
                 description: {artwork.description}
                 < br />
                 price: {artwork.price }
+                <button onClick={() => addToCart(artwork)}> Add to Cart</button> 
             </li>
             </ul>)}
             
         </div>
     )
 }
+
+
 
 const mapStateToProps = state => {
     return {artworks: state.artworks }
