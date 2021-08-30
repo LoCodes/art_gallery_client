@@ -18,7 +18,9 @@ const ArtworksList = ( { artworks, addToCart  }) => {
     }
     return (
         <div>
-            <h1> Art Gallery </h1>
+            <h1> Art Gallery </h1> 
+
+            {/* this.props.artworks && this.props.artworks.map  */}
 
             {artworks.map(artwork => 
             <ul  key={artwork.id }>

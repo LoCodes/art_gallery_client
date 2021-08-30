@@ -18,8 +18,8 @@ class ArtworksContainer extends Component {
         return (
             <div>
                 ArtworksContainer!
-                <ArtworksForm />
                 <ArtworksList /> 
+                <ArtworksForm />
             </div>
         )
     }

@@ -1,9 +1,9 @@
 // import React, { Component } from 'react'
+import ArtworksList from './ArtworksList'
 import { Switch, Route } from 'react-router-dom'
 import ArtworksContainer from './ArtworksContainer' // form
 import About from './About'
 import Home from './Home'
-import ArtworksList from './ArtworksList'
 import { CartsContainer } from './CartsContainer'
 // import ArtworksForm from './ArtworksForm'
 
