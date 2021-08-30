@@ -1,22 +1,28 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import ArtworksList from './ArtworksList'
+// import ArtworksList from './ArtworksList'
 
 
 export class CartsContainer extends Component {
+    state = {
+        cart: []
+    }
     
     render() {
+        // console.log(this.props.carts)
+        // const artworks = this.props.artworks.map( artwork => <ArtworksList artwork={artwork} />)
         return (
-            <div>
-                
+            <div id="cart-container">
+               {/* {artworks}  */}
             </div>
         )
     }
 }
-// const mapStateToProps = (state) => {
-//     return {
-//         saved: state.carts.saved
-//     }
-// }
 
-export default connect(null, addToCart )(CartsContainer)
+const mapStateToProps = (state) => {
+    return {
+        cart: state.carts.cart
+    }
+}
+
+export default connect(null, mapStateToProps )(CartsContainer)

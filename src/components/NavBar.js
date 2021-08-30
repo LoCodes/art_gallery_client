@@ -17,11 +17,11 @@ const NavBar = () => {
             <li>About</li>
             </NavLink>
 
-            <NavLink to="/artworkslist"exact>
+            <NavLink to="/artworks"exact>
             <li>Art Gallery</li>
             </NavLink>
 
-            <NavLink to="/artworksform" exact >
+            <NavLink to="/artworks/new" exact >
                 <li> Form </li>
             </NavLink>
           </ul>

@@ -9,3 +9,6 @@ export const artworksReducer = ( state = [], action ) => {
     }
 
 }
+
+
+// 2 arguements: state, action

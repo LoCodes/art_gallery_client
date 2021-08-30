@@ -4,6 +4,7 @@ import ArtworksContainer from './ArtworksContainer' // form
 import About from './About'
 import Home from './Home'
 import ArtworksList from './ArtworksList'
+import { CartsContainer } from './CartsContainer'
 // import ArtworksForm from './ArtworksForm'
 
 const Router = () => {
@@ -12,9 +13,10 @@ const Router = () => {
         
         <Switch>           
             <Route exact path="/" component={Home} />
-            <ArtworksContainer exact path="/artworksform" component={ArtworksContainer} />
+            <ArtworksContainer exact path="/artworks/new" component={ArtworksContainer} />
             <About path="/about" component={ About } />
-            <ArtworksList path="/artworkslist" component={ ArtworksList } />
+            <ArtworksList path="/artworks" component={ ArtworksList } />
+            <CartsContainer path="/cart" component={ CartsContainer} />
             {/* <ArtworksForm path="/artworksform" component={ ArtworksForm } /> */}
         </Switch>
     )

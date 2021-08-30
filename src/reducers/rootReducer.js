@@ -9,3 +9,5 @@ export const rootReducer = combineReducers({ // create keys with the values in t
     carts: cartsReducer
 
 })
+
+

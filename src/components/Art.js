@@ -10,7 +10,7 @@ class Art extends Component {
                 <img src={art.img} alt={art.description} width="300" height="300" />
                 <p>Description: {art.description}</p>
                 <h4>Price: {art.price} </h4>
-                <button onClick={() => this.props.addSaved(art)}> Add to Recipe Book </button> 
+                {/* <button onClick={() => this.props.addSaved(art)}> Add to Recipe Book </button>  */}
                 
             </div>
         )

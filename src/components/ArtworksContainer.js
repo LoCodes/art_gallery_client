@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 
 import { fetchArtworks } from '../actions/ArtworksActions'
 import ArtworksForm from './ArtworksForm'
-// import ArtworksList from './ArtworksList'
+import ArtworksList from './ArtworksList'
 
 class ArtworksContainer extends Component {
 
@@ -19,7 +19,7 @@ class ArtworksContainer extends Component {
             <div>
                 ArtworksContainer!
                 <ArtworksForm />
-                {/* <ArtworksList />  */}
+                <ArtworksList /> 
             </div>
         )
     }

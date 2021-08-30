@@ -12,14 +12,19 @@ import { rootReducer } from './reducers/rootReducer'
 import { BrowserRouter as  Router } from 'react-router-dom'
 
 import App from './components/App'
+import { addArtwork } from './actions/ArtworksActions'
+import { addToCart } from './actions/CartsActions'
 
 // create a store for redux => createStore 1. reducer, 2. devTools 
 
 const store = createStore( // cant pass in multiple reducers here 
     rootReducer,    // were going to combine all reducers into rootReducers 
     composeWithDevTools(applyMiddleware(thunk))
-    )
+)
 
+window.store = store 
+window.addArtwork = addArtwork
+window.addToCart = addToCart
 
 ReactDom.render(
     <Provider store={store}>
