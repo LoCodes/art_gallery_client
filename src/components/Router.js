@@ -18,6 +18,7 @@ const Router = () => {
             <ArtworksList path="/artworks" component={ ArtworksList } />
             <CartsContainer path="/cart" component={ CartsContainer} />
             {/* <ArtworksForm path="/artworksform" component={ ArtworksForm } /> */}
+            
         </Switch>
     )
 }
