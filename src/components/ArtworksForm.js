@@ -10,7 +10,8 @@ class ArtworksForm extends Component {
         description: '',
         img: '',
         price: '',
-        user_id: 1
+        user_id: 1, 
+        cart_id: 1
     }
 
     // handle onchange in each input, so client can type 
@@ -47,6 +48,8 @@ class ArtworksForm extends Component {
                 <input type="text" value={this.state.price} onChange={this.handleChange} name="price" />
                 <br /> 
                 <input type="hidden" defaultValue= {1} onChange={this.handleChange}  name="user_id" />
+                <input type="hidden" defaultValue= {1} onChange={this.handleChange}  name="cart_id" />
+
 
                 <input type="submit" value="Add Art" />
             </form>
