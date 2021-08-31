@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import ArtworksContainer from './ArtworksContainer' // form
 import About from './About'
 import Home from './Home'
-import { CartsContainer } from './CartsContainer'
+// import { CartsContainer } from './CartsContainer'
 import Cart from './Cart'
 // import ArtworksForm from './ArtworksForm'
 
@@ -17,7 +17,7 @@ const Router = () => {
             <ArtworksContainer exact path="/artworks/new" component={ArtworksContainer} />
             <About path="/about" component={ About } />
             <ArtworksList path="/artworks" component={ ArtworksList } />
-            <CartsContainer path="/cart" component={ CartsContainer} />
+            {/* <CartsContainer path="/cart" component={ CartsContainer} /> */}
             <Cart path="/cart" component={ Cart } />
             {/* <ArtworksForm path="/artworksform" component={ ArtworksForm } /> */}
             

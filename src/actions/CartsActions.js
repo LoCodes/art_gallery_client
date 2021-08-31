@@ -8,13 +8,13 @@ export const addToCart = (artwork) => ({
 //     payload: artwork
 // })
 
-export const fetchCarts = () => {
-    return(dispatch) => {
-        fetch('http://127.0.0.1:3000/carts')
-        .then(resp => resp.json())
-        .then(artworks => dispatch({type: "FETCH_CARTS", payload: artworks}))
-    }
-}
+// export const fetchCarts = () => {
+//     return(dispatch) => {
+//         fetch('http://127.0.0.1:3000/carts')
+//         .then(resp => resp.json())
+//         .then(artworks => dispatch({type: "FETCH_CARTS", payload: artworks}))
+//     }
+// }
 
 // export const addToCart = (artwork) => {
 //     return dispatch => {
