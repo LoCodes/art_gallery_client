@@ -24,6 +24,13 @@ const NavBar = () => {
             <NavLink to="/artworks/new" exact >
                 <li> Form </li>
             </NavLink>
+
+            <NavLink to="/cart" exact >
+                <li> Cart </li>
+            </NavLink>
+
+
+
           </ul>
             
         </div>

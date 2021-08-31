@@ -8,9 +8,9 @@ export class CartsContainer extends Component {
     //     cart: []
     // }
 
-    componentDidMount(){
-        this.props.fetchCarts()
-    }
+    // componentDidMount(){
+    //     this.props.fetchCarts()
+    // }
     
     render() {
         // console.log(this.props.carts)

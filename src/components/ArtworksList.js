@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addToCart } from '../actions/CartsActions'
+// import { addToCart } from '../actions/CartsActions'
 // import { useAuth0 } from '@auth0/auth0-react';
 import Art from './Art'
 
