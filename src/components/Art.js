@@ -1,30 +1,40 @@
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
+import { addToCart } from '../actions/CartsActions'
+// import { connect } from 'react-redux'
+import {useDispatch} from 'react-redux'
 
-class Art extends Component {
+
+const Art = ({artwork}) => {
 
     // art = this.props.artwork
 
-
-    // handleClick = (e, artwork) => {
+    const dispatch = useDispatch()
+    const handleCart = (artwork) => {
+        dispatch(addToCart(artwork))
+    }
+    
+    // const handleCart = (e, artwork) => {
     //     e.preventDefault() 
     //     addToCart(artwork)
     //     // console.log(e.value)
     // }
 
-    render() {
-        const art = this.props.artwork
+
+        // const art = this.props.artwork
         return (
             <div className="art">
-                <h3>Title: {art.title} </h3>
-                <img src={art.img} alt={art.description} width="300" height="300" />
-                <p>Description: {art.description}</p>
-                <h4>Price: {art.price} </h4>
+                <h3>Title: {artwork.title} </h3>
+                <img src={artwork.img} alt={artwork.description} width="300" height="300" />
+                <p>Description: {artwork.description}</p>
+                <h4>Price: {artwork.price} </h4>
                 {/* <button onClick={() => this.props.addSaved(art)}> Add to Recipe Book </button>  */}
-                {/* <button onClick={(e) => handleClick(e, artwork)}> Add to Cart</button>  */}
+                <button onClick={() => handleCart(artwork)}> Add to Cart</button> 
 
             </div>
         )
-    }
+    
 }
 
 export default Art
+
+// export default connect(null, { addToCart })(Art);

@@ -4,8 +4,12 @@ import { connect } from 'react-redux'
 
 
 export class CartsContainer extends Component {
-    state = {
-        cart: []
+    // state = {
+    //     cart: []
+    // }
+
+    componentDidMount(){
+        this.props.fetchCarts()
     }
     
     render() {
