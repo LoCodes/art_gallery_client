@@ -12,7 +12,7 @@ const App = () => {
     // }
 
     return (
-        <div>
+        <div className="app">
             <NavBar/>
             <Switch>
             Hello World - APP 

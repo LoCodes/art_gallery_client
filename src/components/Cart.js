@@ -3,22 +3,24 @@ import React from 'react'
 // import { connect } from 'react-redux'
 import {useSelector} from 'react-redux'
 import Art from './Art'
+import CartArt from './CartArt'
 
 
 
 const Cart = () => {
         const artInCart = useSelector(state => state.carts.carts)
-        // debugger
-        // const artworks = this.props.carts.map(cart => console.log(cart))
         return (
             <div className="cart">
-                {/* {artworks = this.props.carts.map(cart => console.log(cart))} */}
 
                 CART 
 
                 {artInCart.map(artwork => {
-                    return <Art key={artwork.id} artwork={artwork} />
+                    // return <Art key={artwork.id} artwork={artwork} /> 
+                    return <CartArt key={artwork.id} artwork={artwork} />
                 })}
+
+                { }
+                
             </div>
         )
     
