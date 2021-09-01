@@ -3,10 +3,10 @@ export const addToCart = (artwork) => ({
      payload: artwork
  })
 
-// export const deleteFromCart = (artwork) => ({
-//     type: "DELETE_CART",
-//     payload: artwork
-// })
+export const deleteFromCart = (artwork) => ({
+    type: "DELETE_CART",
+    payload: artwork
+})
 
 // export const fetchCarts = () => {
 //     return(dispatch) => {
