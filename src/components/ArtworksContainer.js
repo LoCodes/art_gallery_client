@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { fetchArtworks } from '../actions/ArtworksActions'
-import ArtworksForm from './ArtworksForm'
+// import ArtworksForm from './ArtworksForm'
 import ArtworksList from './ArtworksList'
 
 class ArtworksContainer extends Component {
@@ -16,10 +16,10 @@ class ArtworksContainer extends Component {
 
     render() {
         return (
-            <div>
+            <div className="art-container">
                 ArtworksContainer!
                 <ArtworksList /> 
-                <ArtworksForm />
+                {/* <ArtworksForm /> */}
             </div>
         )
     }

@@ -6,7 +6,7 @@ import About from './About'
 import Home from './Home'
 // import { CartsContainer } from './CartsContainer'
 import Cart from './Cart'
-// import ArtworksForm from './ArtworksForm'
+import ArtworksForm from './ArtworksForm'
 
 const Router = () => {
     
@@ -14,12 +14,12 @@ const Router = () => {
         
         <Switch>           
             <Route exact path="/" component={Home} />
-            <ArtworksContainer exact path="/artworks/new" component={ArtworksContainer} />
+            <ArtworksContainer exact path="/artworks" component={ArtworksContainer} />
             <About path="/about" component={ About } />
-            <ArtworksList path="/artworks" component={ ArtworksList } />
+            {/* <ArtworksList path="/artworks" component={ ArtworksList } /> */}
             {/* <CartsContainer path="/cart" component={ CartsContainer} /> */}
             <Cart path="/cart" component={ Cart } />
-            {/* <ArtworksForm path="/artworksform" component={ ArtworksForm } /> */}
+            <ArtworksForm path="/artworks/new" component={ ArtworksForm } />
             
         </Switch>
     )

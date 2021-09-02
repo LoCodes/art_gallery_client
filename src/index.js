@@ -1,5 +1,5 @@
 // react-redux, redux, thunk 
-
+import './App.css'
 import React from 'react'
 import ReactDom from 'react-dom'
 import { createStore, applyMiddleware } from 'redux'

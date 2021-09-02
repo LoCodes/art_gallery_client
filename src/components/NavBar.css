@@ -14,7 +14,7 @@ body {
 
 .navMenu {
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -79,13 +79,4 @@ body {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
-}
-
-
-
-.about, .cart, .art, .home, .form, .art-container {
-  max-width: 500px;
-  margin: auto;
-  padding-top: 150;  
-  
 }

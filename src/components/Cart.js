@@ -2,7 +2,6 @@ import React from 'react'
 // import ArtworksList from './ArtworksList'
 // import { connect } from 'react-redux'
 import {useSelector} from 'react-redux'
-import Art from './Art'
 import CartArt from './CartArt'
 
 

@@ -1,9 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+// import './NavBar.css'
 
 const NavBar = () => {
     return (
-        <div className="navbar">
+        <div className="navMenu">
           <ul> 
             <NavLink to="/" exact >
             <li>Home</li>  
@@ -18,7 +19,7 @@ const NavBar = () => {
             </NavLink>
 
             <NavLink to="/artworks"exact>
-            <li>Art Gallery</li>
+            <li>Gallery</li>
             </NavLink>
 
             <NavLink to="/artworks/new" exact >
