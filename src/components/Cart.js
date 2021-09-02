@@ -35,9 +35,9 @@ const Cart = () => {
                 CART 
                 <br />
                 Items in Cart: {countCartItem}
-                {artInCart.map(artwork => {
+                {artInCart.map((artwork, idx) => {
                     // return <Art key={artwork.id} artwork={artwork} /> 
-                    return <CartArt key={artwork.id} artwork={artwork} />
+                    return <CartArt key={idx} artwork={artwork} />
                 })}
                 
                 total: {Math.round(result * 100) / 100}

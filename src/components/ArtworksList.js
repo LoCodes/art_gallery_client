@@ -1,12 +1,19 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 // import { addToCart } from '../actions/CartsActions'
-// import { useAuth0 } from '@auth0/auth0-react';
+// import { withAuth0 } from '@auth0/auth0-react';
 import Art from './Art'
 
 
 class ArtworksList extends Component {
     render() {
+        // const { isLoading } = withAuth0();
+        
+        // if (isLoading) {
+        //     debugger
+        //     return <div>Loading...</div> 
+        // }
+
         const artwork = this.props.artworks.map(artwork => {
             return (
                 <Art key={artwork.id} artwork={artwork}  />
