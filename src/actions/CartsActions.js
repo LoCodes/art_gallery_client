@@ -8,6 +8,11 @@ export const deleteFromCart = (artwork) => ({
     payload: artwork
 })
 
+// export const getTotalCost = (state)  =>{
+//     // console.log(state)
+//     return state.reduce((result, artwork) => artwork.qty * artwork.price + result, 0); 
+// }
+
 // export const fetchCarts = () => {
 //     return(dispatch) => {
 //         fetch('http://127.0.0.1:3000/carts')
