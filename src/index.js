@@ -14,13 +14,22 @@ import { BrowserRouter as  Router } from 'react-router-dom'
 import App from './components/App'
 import { addArtwork } from './actions/ArtworksActions'
 import { addToCart } from './actions/CartsActions'
-
+import {loadState, saveState } from './localStorage'
 // create a store for redux => createStore 1. reducer, 2. devTools 
+
+const persistedState = loadState();
 
 const store = createStore( // cant pass in multiple reducers here 
     rootReducer,    // were going to combine all reducers into rootReducers 
+    persistedState,
     composeWithDevTools(applyMiddleware(thunk))
 )
+
+store.subscribe(() => {
+    saveState({
+      carts: store.getState().carts
+    });
+  });
 
 window.store = store 
 window.addArtwork = addArtwork
