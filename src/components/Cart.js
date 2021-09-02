@@ -21,14 +21,9 @@ const Cart = () => {
             .map((item) => item.price)
             .reduce((acc, value) => acc + value, 0)
           
-        const result = getTotalPrice(artInCart);
-
-        
-
-          
+        const result = getTotalPrice(artInCart);        
         // console.log(Math.round(result * 100) / 100);
-          
-        
+                
         return (
             <div className="cart">
 
@@ -40,7 +35,7 @@ const Cart = () => {
                     return <CartArt key={idx} artwork={artwork} />
                 })}
                 
-                total: {Math.round(result * 100) / 100}
+                total: { Math.round(result * 100) / 100 }
 
             </div>
         )
@@ -48,8 +43,3 @@ const Cart = () => {
 }
 export default Cart
 
-// const mapStateToProps = state => {
-//     return {artworks: state.artworks }
-// }
-
-// export default connect(mapStateToProps)(Cart)

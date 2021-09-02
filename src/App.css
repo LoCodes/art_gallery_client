@@ -87,10 +87,12 @@ body {
   max-width: 500px;
   margin: auto;
   padding-top: 150;  
+  border: #ae9b9b;
+  border: radius 25px;;
   
 }
 
-art {
+img{
   border-radius: 25px;
 
 }
