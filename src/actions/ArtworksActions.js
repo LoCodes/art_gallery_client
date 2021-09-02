@@ -22,3 +22,7 @@ export const addArtwork = (artwork) => {
     }
 }
 
+export const deleteArt = (artwork) => ({
+    type: "DELETE_ARTWORK",
+    payload: artwork
+})

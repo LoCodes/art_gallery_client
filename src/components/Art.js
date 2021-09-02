@@ -2,6 +2,7 @@
 import { addToCart } from '../actions/CartsActions'
 // import { connect } from 'react-redux'
 import {useDispatch} from 'react-redux'
+import { deleteArt } from '../actions/ArtworksActions'
 
 
 const Art = ({artwork}) => {
@@ -11,6 +12,10 @@ const Art = ({artwork}) => {
     const dispatch = useDispatch()
     const handleCart = (artwork) => {
         dispatch(addToCart(artwork))
+    }
+
+    const handleDelete = (artwork) => {
+        dispatch(deleteArt(artwork))
     }
     
     // const handleCart = (e, artwork) => {
@@ -29,6 +34,7 @@ const Art = ({artwork}) => {
                 <h4>Price: {artwork.price} </h4>
                 {/* <button onClick={() => this.props.addSaved(art)}> Add to Recipe Book </button>  */}
                 <button onClick={() => handleCart(artwork)}> Add to Cart</button> 
+                <button onClick={() => handleDelete(artwork)} > Delete Art</button>
 
             </div>
         )
