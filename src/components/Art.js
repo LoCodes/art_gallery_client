@@ -24,6 +24,8 @@ const Art = ({artwork}) => {
     //     // console.log(e.value)
     // }
 
+    
+
 
         // const art = this.props.artwork
         return (

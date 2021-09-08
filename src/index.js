@@ -39,7 +39,6 @@ ReactDom.render(
     <Provider store={store}>
         <Router >
             <App />        
-
         </Router>
     </Provider>,
 
