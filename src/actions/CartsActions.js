@@ -3,9 +3,9 @@ export const addToCart = (artwork) => ({
      payload: artwork
  })
 
-export const deleteFromCart = (artwork) => ({
+export const deleteFromCart = (position) => ({
     type: "DELETE_CART",
-    payload: artwork
+    payload: position
 })
 
 // export const getTotalCost = (state)  =>{

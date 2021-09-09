@@ -23,6 +23,9 @@ const Cart = () => {
           
         const result = getTotalPrice(artInCart);        
         // console.log(Math.round(result * 100) / 100);
+
+        let counter = -1
+
                 
         return (
             <div className="cart">
@@ -32,7 +35,9 @@ const Cart = () => {
                 Items in Cart: {countCartItem}
                 {artInCart.map((artwork, idx) => {
                     // return <Art key={artwork.id} artwork={artwork} /> 
-                    return <CartArt key={idx} artwork={artwork} />
+                    counter++ 
+                    return <CartArt key={idx} artwork={artwork} position={counter}/>
+                    
                 })}
                 
                 total: { Math.round(result * 100) / 100 }
