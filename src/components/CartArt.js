@@ -1,5 +1,4 @@
 import React from 'react'
-// import { addToCart } from '../actions/CartsActions'
 import {useDispatch} from 'react-redux'
 import { deleteFromCart } from '../actions/CartsActions'
 
@@ -18,8 +17,6 @@ const CartArt = ({artwork, position}) => {
                 <h3>Title: {artwork.title} </h3>
                 <img src={artwork.img} alt={artwork.description} width="100" height="100" />
                 <h4>Price: {artwork.price} </h4>
-                {/* <button onClick={() => this.props.addSaved(art)}> Add to Recipe Book </button>  */}
-                {/* <button onClick={() => handleCart(artwork)}> Add to Cart</button>  */}
                 <button onClick={() => removeFromCart(position)}> remove</button>
 
             </div>

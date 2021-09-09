@@ -14,7 +14,7 @@ export const cartsReducer = ( state = initialState, action ) => {
         case 'DELETE_CART':
             let newCart = []
             for (let i = 0 ; i < state.carts.length ; i++){
-                if (i != action.payload) {
+                if (i !== action.payload) {
                     newCart.push(state.carts[i])
                 }
             }

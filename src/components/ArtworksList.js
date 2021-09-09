@@ -22,6 +22,7 @@ class ArtworksList extends Component {
         return (
             <div id="art-container">
                 {artwork}
+               
             </div>
         )
     }

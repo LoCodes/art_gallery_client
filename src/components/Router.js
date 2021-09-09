@@ -13,9 +13,9 @@ const Router = () => {
         
         <Switch>           
             <Route exact path="/" component={ Home } />
-            <ArtworksForm path="/artworks/new" component={ ArtworksForm } />
-            <ArtworksContainer path="/artworks" component={ ArtworksContainer } />
-            <About path="/about" component={ About } />
+            <Route path="/artworks/new" component={ ArtworksForm } />
+            <Route path="/artworks" component={ ArtworksContainer } />
+            <Route path="/about" component={ About } />
             <Route path="/cart" component={ CartsContainer } />           
         </Switch>
     )

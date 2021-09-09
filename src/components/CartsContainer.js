@@ -34,17 +34,14 @@ const CartsContainer = () => {
                 <br />
                 Items in Cart: {countCartItem}
                 {artInCart.map((artwork, idx) => {
-                    // return <Art key={artwork.id} artwork={artwork} /> 
                     counter++ 
                     return <CartArt key={idx} artwork={artwork} position={counter}/>
                     
                 })}
                 
                 total: { Math.round(result * 100) / 100 }
-
             </div>
         )
-    
 }
 export default CartsContainer
 
