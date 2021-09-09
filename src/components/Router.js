@@ -4,7 +4,7 @@ import ArtworksContainer from './ArtworksContainer' // form
 import About from './About'
 import Home from './Home'
 // import { CartsContainer } from './CartsContainer'
-import Cart from './Cart'
+import CartsContainer from './CartsContainer'
 import ArtworksForm from './ArtworksForm'
 
 const Router = () => {
@@ -16,7 +16,7 @@ const Router = () => {
             <ArtworksForm path="/artworks/new" component={ ArtworksForm } />
             <ArtworksContainer path="/artworks" component={ ArtworksContainer } />
             <About path="/about" component={ About } />
-            <Cart path="/cart" component={ Cart } />           
+            <Route path="/cart" component={ CartsContainer } />           
         </Switch>
     )
 }
