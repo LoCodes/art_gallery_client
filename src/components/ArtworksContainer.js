@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { fetchArtworks } from '../actions/ArtworksActions'
-// import ArtworksForm from './ArtworksForm'
+import ArtworksForm from './ArtworksForm'
 import ArtworksList from './ArtworksList'
 
 class ArtworksContainer extends Component {

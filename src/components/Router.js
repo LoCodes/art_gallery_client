@@ -12,14 +12,11 @@ const Router = () => {
     return (
         
         <Switch>           
-            <Route exact path="/" component={Home} />
-            <ArtworksContainer path="/artworks" component={ArtworksContainer} />
-            <About path="/about" component={ About } />
-            {/* <ArtworksList path="/artworks" component={ ArtworksList } /> */}
-            {/* <CartsContainer path="/cart" component={ CartsContainer} /> */}
-            <Cart path="/cart" component={ Cart } />
+            <Route exact path="/" component={ Home } />
             <ArtworksForm path="/artworks/new" component={ ArtworksForm } />
-            
+            <ArtworksContainer path="/artworks" component={ ArtworksContainer } />
+            <About path="/about" component={ About } />
+            <Cart path="/cart" component={ Cart } />           
         </Switch>
     )
 }
