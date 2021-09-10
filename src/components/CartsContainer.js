@@ -15,6 +15,7 @@ const CartsContainer = () => {
         const countCartItem = useSelector(state => state.carts.carts.length)
         // const total = artInCart.reduce((sum, item) => sum + countCartItem * item.price, 0);
             // console.log(artInCart.total)
+        
 
             
         const getTotalPrice = (items) => items

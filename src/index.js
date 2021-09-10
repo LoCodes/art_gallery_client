@@ -8,9 +8,7 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension';
 //window.__Redux_devtools
 import { rootReducer } from './reducers/rootReducer'
-
 import { BrowserRouter as  Router } from 'react-router-dom'
-
 import App from './components/App'
 import { addArtwork } from './actions/ArtworksActions'
 import { addToCart } from './actions/CartsActions'

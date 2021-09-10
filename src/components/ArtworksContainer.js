@@ -12,7 +12,7 @@ class ArtworksContainer extends Component {
     // I DONT NEED THIS?
     componentDidMount(){
         this.props.fetchArtworks()
-        debugger
+        // debugger
     }
 
     render() {
