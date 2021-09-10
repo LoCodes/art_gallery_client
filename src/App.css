@@ -4,12 +4,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  
 }
 
 body {
   background: #4a4141;
-  
   font-family: "Montserrat", sans-serif;
+  
   
 }
 
@@ -84,16 +85,28 @@ body {
 
 
 
-.about, .cart, .art, .home, .form, .art-container {
+/* .about, .cart, .art, .home, .form, .art-container {
   max-width: 500px;
   margin: auto;
   padding-top: 150;  
   border: #ae9b9b;
   border: radius 25px;;
   
-}
+} */
 
 img{
   border-radius: 25px;
 
+}
+
+.about, .cart, .art, .home, .form, .art-container  {
+  padding: 50px;
+   
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  /* padding: 30px; */
+  border-radius: 5px;
 }
