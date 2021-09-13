@@ -1,12 +1,12 @@
-// create action that will fets artworks from api 
+// create action that will fetch artworks from api 
 
 // GET
 export const fetchArtworks = () => {
-    return(dispatch) => {
+    return(dispatch) => {  
         fetch('http://127.0.0.1:3000/artworks')
-        .then(resp => resp.json())
+        .then(resp => resp.json()) // returning another promise so we need to retrun another function
         .then(artworks => dispatch({type: "FETCH_ARTWORKS", payload: artworks}))
-    }
+    } 
 }
 
 // POST

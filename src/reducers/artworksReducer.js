@@ -1,7 +1,7 @@
 export const artworksReducer = ( state = [], action ) => {
     switch(action.type){
         case 'FETCH_ARTWORKS': 
-            return action.payload
+            return action.payload // return payload from that action
         case 'ADD_ARTWORK':
             return [...state, action.payload]
         case 'DELETE_ARTWORK':
@@ -13,4 +13,4 @@ export const artworksReducer = ( state = [], action ) => {
 }
 
 
-// 2 arguements: state, action
+// update store state

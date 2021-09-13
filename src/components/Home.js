@@ -1,14 +1,15 @@
 import React from 'react'
 // import Art from './Art'
-import User from './User'
+import UsersContainer from './UsersContainer'
 
 
 const Home = () =>{
     return (
         <div className="home">
             Home Page!
-            <h1>Welcome <User /> </h1>
-            {/* <Art artwork = {artwork}/> */}
+            <h1>Welcome  </h1>
+            <UsersContainer />
+           
 
         </div>
     )

@@ -2,8 +2,6 @@ import React from 'react'
 import {useDispatch} from 'react-redux'
 import { deleteFromCart } from '../actions/CartsActions'
 
-
-
 const CartArt = ({artwork, position}) => {
     const dispatch = useDispatch()
     const removeFromCart = (position) => {
@@ -26,8 +24,3 @@ const CartArt = ({artwork, position}) => {
 }
 
 export default CartArt
-
-// put art here without the button and create remove button instead then  iterate in the cart 
-// done 
-
-//create remove handle 

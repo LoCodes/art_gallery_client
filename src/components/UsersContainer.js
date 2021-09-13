@@ -12,7 +12,7 @@ class UsersContainer extends Component {
     render() {
         return (
             <div>
-                Logged In: 
+               
                 <User /> 
                 
             </div>

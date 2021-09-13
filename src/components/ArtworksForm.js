@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
+
 import { addArtwork }from '../actions/ArtworksActions.js'
 import { connect } from 'react-redux'
 
+//controlled components - values are controlled by state 
 
 class ArtworksForm extends Component {
 
@@ -15,6 +17,7 @@ class ArtworksForm extends Component {
     }
 
     // handle onchange in each input, so client can type 
+    //dynamic
     handleChange = event => {
         const { name, value } = event.target
 

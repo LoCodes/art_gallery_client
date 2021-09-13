@@ -10,9 +10,10 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { rootReducer } from './reducers/rootReducer'
 import { BrowserRouter as  Router } from 'react-router-dom'
 import App from './components/App'
-import { addArtwork } from './actions/ArtworksActions'
-import { addToCart } from './actions/CartsActions'
 import {loadState, saveState } from './localStorage'
+
+// import { addArtwork } from './actions/ArtworksActions'
+// import { addToCart } from './actions/CartsActions'
 // create a store for redux => createStore 1. reducer, 2. devTools 
 
 const persistedState = loadState();
@@ -29,9 +30,9 @@ store.subscribe(() => {
     });
   });
 
-window.store = store 
-window.addArtwork = addArtwork
-window.addToCart = addToCart
+// window.store = store 
+// window.addArtwork = addArtwork
+// window.addToCart = addToCart
 
 ReactDom.render(
     <Provider store={store}>

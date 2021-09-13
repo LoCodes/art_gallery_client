@@ -6,7 +6,7 @@ import { deleteArt } from '../actions/ArtworksActions'
 
 
 const Art = ({ artwork }) => {
-
+    
     const dispatch = useDispatch()
 
     const handleCart = (artwork) => {
