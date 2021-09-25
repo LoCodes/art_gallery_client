@@ -3,10 +3,13 @@ import { addToCart } from '../actions/CartsActions'
 // import { connect } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { deleteArt } from '../actions/ArtworksActions'
+import {useState } from 'react'
 
 
 const Art = ({ artwork }) => {
     
+    const [count, setCount] = useState(0)
+
     const dispatch = useDispatch()
 
     const handleCart = (artwork) => {
@@ -25,6 +28,8 @@ const Art = ({ artwork }) => {
                 <h4>Price: {artwork.price} </h4>
                 <button onClick={() => handleCart(artwork)}> Add to Cart</button> 
                 <button onClick={() => handleDelete(artwork)} > Delete Art</button>
+                <button onClick={() => setCount(count + 1)}> Likes: {count} </button>
+                
             </div>
         )
     
