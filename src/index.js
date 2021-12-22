@@ -16,7 +16,7 @@ import {loadState, saveState } from './localStorage'
 // import { addToCart } from './actions/CartsActions'
 // create a store for redux => createStore 1. reducer, 2. devTools 
 
-const persistedState = loadState();
+const persistedState = loadState(); 
 
 const store = createStore( // cant pass in multiple reducers here 
     rootReducer,    // were going to combine all reducers into rootReducers 
@@ -40,6 +40,5 @@ ReactDom.render(
             <App />        
         </Router>
     </Provider>,
-
     document.getElementById('root') 
 )

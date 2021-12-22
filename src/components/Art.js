@@ -13,7 +13,7 @@ const Art = ({ artwork }) => {
     const dispatch = useDispatch()
 
     const handleCart = (artwork) => {
-        dispatch(addToCart(artwork))
+        dispatch(addToCart(artwork))      
     }
 
     const handleDelete = (artwork) => {

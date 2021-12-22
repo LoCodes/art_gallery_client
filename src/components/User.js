@@ -4,12 +4,10 @@ import {useSelector} from 'react-redux'
 
 const User = () => {
     const users = useSelector(state => state.users)
-
     // console.log(users)
     return (
         <div>
-           {users.map(u => u.username)} 
-            
+           {users.map(u => u.username)}             
         </div>
     )
 }

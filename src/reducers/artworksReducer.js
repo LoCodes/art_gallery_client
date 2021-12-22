@@ -5,7 +5,7 @@ export const artworksReducer = ( state = [], action ) => {
         case 'ADD_ARTWORK':
             return [...state, action.payload]
         case 'DELETE_ARTWORK':
-            return state.filter(artwork => artwork !== action.payload)
+            return state.filter(artwork => artwork.id !== action.payload.id)
         default:
             return state
     }

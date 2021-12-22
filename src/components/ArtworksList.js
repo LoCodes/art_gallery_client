@@ -34,7 +34,9 @@ class ArtworksList extends Component {
                 {this.searchTitle().map(artwork => {
                     return <Art key={artwork.id} artwork={artwork} />
                 })} 
-                {/* {artwork} */}               
+                {/* {artwork} */}  
+                
+                            
             </div>
         )
     }
